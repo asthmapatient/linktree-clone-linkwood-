@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.radio-togglers {
+  @apply flex items-center     border  p-2 bg-gray-300;
+}
+.radio-togglers div {
+  @apply py-2 px-3  flex gap-2 items-center;
+}
+.radio-togglers input[type="radio"] {
+  @apply hidden;
+}
+
+.radio-togglers input[type="radio"]:checked + div {
+  @apply bg-white text-blue-400;
+}
